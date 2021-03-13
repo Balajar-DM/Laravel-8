@@ -35,8 +35,9 @@ Route::get('data',function(){
     return view('contoh.mahasiswa',['mahasiswa' => $arr,]);
 });
 
+//Route regular expression
 Route::get('/user/{id}', function ($id) {
-    return "User $id";
+    return "Tampilkan $id";
 })-> where('id','[0-9]');
 
 Route::get('/hello', function () {
@@ -50,6 +51,15 @@ Route::get('/list',function(){
     $nilai = "96";
     return view('contoh.mahasiswa',compact('nama','nilai'));
 });
+//End Route regular expression
+
+//var_dump in Laravel
+Route::get('/test', function () {
+    $hello = ['Hello World', 2 => ['Hello Jakarta','Hello Medan']];
+    dd($hello);
+    return $hello;
+});
+//End var_dump in Laravel
 
 //Layouting Template
 Route::get('siswa', function () {
