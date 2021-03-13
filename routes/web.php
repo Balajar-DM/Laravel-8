@@ -61,8 +61,18 @@ Route::get('/test', function () {
 });
 //End var_dump in Laravel
 
+//Testing Blade Laravel
+Route::get('/mahasisa', function () {
+    $arrMahasiswa = [
+        'mahasiswa01' => "Gamerst",
+        'mahasiswa02' => "Aspite", 
+    ];
+    return view('universitas.mahasiswa')->with('mahasiswa', $arrMahasiswa);
+});
+//End Testing Blade Laravel
+
 //Layouting Template
-Route::get('siswa', function () {
+Route::get('/siswa', function () {
     $arrSiswa = ["Dion","Nisius","Montolalu","Tasya","Manayang"];
     return view("layout.siswa")->with('siswa', $arrSiswa);
 });
