@@ -71,6 +71,24 @@ Route::get('/mahasisa', function () {
 });
 //End Testing Blade Laravel
 
+//Use bootstrap
+Route::get('boost', function () {
+    $arrMahasiswa = [
+        'mahasiswa01' => "Gamerst",
+        'mahasiswa02' => "Aspite", 
+    ];
+    return view('contoh.bootstrapm')->with('mahasiswa', $arrMahasiswa);
+});
+//End use bootstrap
+
+//Blade get_data
+Route::get('ambe', function () {
+    $nama = 'Dion Montolalu';
+    $nilai = 75;
+    return view('contoh.get_data', compact('nama','nilai'));
+});
+//End Blade get_data
+
 //Layouting Template
 Route::get('/siswa', function () {
     $arrSiswa = ["Dion","Nisius","Montolalu","Tasya","Manayang"];
