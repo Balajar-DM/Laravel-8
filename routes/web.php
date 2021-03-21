@@ -91,14 +91,14 @@ Route::get('ambe', function () {
 
 //Layouting Template
 Route::get('/siswa', function () {
-    $arrSiswa = ["Dion","Nisius","Montolalu","Tasya","Manayang"];
-    return view("layout.siswa")->with('siswa', $arrSiswa);
+    $arrMahasiswa = ["Dion","Nisius","Montolalu","Tasya","Manayang"];
+    return view("layout.mahasiswa")->with('mahasiswa', $arrMahasiswa);
 });
-Route::get('guru', function () {
-    $arrGuru = ["Maki","Aspire","Netflix","Wetz","Asegar"];
-    return view("layout.guru")->with('guru', $arrGuru);
+Route::get('/dosen', function () {
+    $arrDosen = ["Maki","Aspire","Netflix","Wetz","Asegar"];
+    return view("layout.dosen")->with('dosen', $arrDosen);
 });
-Route::get('galeri', function () {
+Route::get('/gallery', function () {
     return view("layout.gallery");
 });
 //End Layouting Template
