@@ -3,6 +3,7 @@
 @section('mhs','active')
 
 @section('content')
+@parent
     <div class="container text-center mt-3 p-4 bg-white">
         <h1>Data Mahasiswa</h1>
         <div class="row">

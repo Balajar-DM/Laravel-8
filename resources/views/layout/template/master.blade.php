@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <title>@yield('title')</title>
+    <title>@yield('title', 'Sistem Informasi Mahasiswa')</title>
 </head>
 
 <body>
@@ -24,7 +24,10 @@
         </ul>
     </nav>
 
-    @yield('content')
+    {{-- @yield('content') --}}
+    @section('content')
+        <div class="alert alert-primary text-center">Sistem Informasi Mahasiswa</div>
+    @show
 
 
     <footer class="bg-dark py-4 text-white mt-4">
