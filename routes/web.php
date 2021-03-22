@@ -89,7 +89,7 @@ Route::get('ambe', function () {
 });
 //End Blade get_data
 
-//Layouting Template
+//Layouting Template Section Extends
 Route::get('/siswa', function () {
     $arrMahasiswa = ["Dion","Nisius","Montolalu","Tasya","Manayang"];
     return view("layout.mahasiswa")->with('mahasiswa', $arrMahasiswa);
@@ -101,4 +101,10 @@ Route::get('/dosen', function () {
 Route::get('/gallery', function () {
     return view("layout.gallery");
 });
-//End Layouting Template
+//End Layouting Template Section Extends
+
+//Layouting Components and Slots
+Route::get('admin', function () {
+    return view('layout.composlots.admin');
+});
+//End Layouting Components and Slots
