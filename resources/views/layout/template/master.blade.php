@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,13 +12,13 @@
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link @yield('mhs')" href="/siswa">Data Mahasiswa</a>
+                <a class="nav-link @yield('mhs')" href="{{ route('siswa') }}">Data Mahasiswa</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link @yield('dos')" href="/dosen">Data Dosen</a>
+                <a class="nav-link @yield('dos')" href="{{ route('dosen') }}">Data Dosen</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link @yield('gal')" href="/gallery">Gallery</a>
+                <a class="nav-link @yield('gal')" href="{{ route('gambar') }}">Gallery</a>
             </li>
         </ul>
     </nav>

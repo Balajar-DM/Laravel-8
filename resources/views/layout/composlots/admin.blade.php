@@ -25,7 +25,6 @@
                 @component('layout.composlots.alert', ['class' => 'success', 'title' => 'Pengajuan'])
                     Bulan depan cuti panjang
                 @endcomponent
-
             </div>
         </div>
     </div>
