@@ -110,3 +110,9 @@ Route::get('admin', function () {
     return view('layout.composlots.admin');
 });
 //End Layouting Components and Slots
+
+//Named Routes Paramater
+Route::get('informasi/{fakultas}/{jurusan}', function ($fakultas, $jurusan) {
+    $data = [$fakultas, $jurusan];
+    return view('layout.template.informasi')->with('data', $data);
+})->name('info');

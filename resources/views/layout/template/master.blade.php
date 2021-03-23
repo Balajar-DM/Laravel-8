@@ -20,6 +20,9 @@
             <li class="nav-item">
                 <a class="nav-link @yield('gal')" href="{{ route('gambar') }}">Gallery</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link @yield('inf')" href="{{ route('info', ['fakultas' => 'TEKNIK', 'jurusan' => 'PTIK']) }}">Info</a>
+            </li>
         </ul>
     </nav>
 
